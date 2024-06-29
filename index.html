@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+   
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="p-3 flex bg-slate-50 justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img class="object-cover max-w-12 max-h-12" src="Pic/Logo.jpeg" alt="Logo">
+            <span class="text-lg font-medium font-display">Logo</span>
+        </a>
+
+        <div id="nav-menu" class="hidden md:flex gap-12">
+            <a href="#" class="font-medium hover:text-primary">Home</a>
+            <a href="#" class="font-medium hover:text-primary">Journal</a>
+            <a href="#" class="font-medium hover:text-primary">Training</a>
+            <a href="#" class="font-medium hover:text-primary">Blog</a>
+            <a href="#" class="font-medium hover:text-primary">News</a>
+            <a href="#" class="font-medium hover:text-primary">About Us</a>
+        </div>
+        <button class="hidden md:flex gap-3 items-center border border-black px-6 py-2 rounded-xl hover:border-gray-400">
+            <img class="h-9 w-8" src="./Pic/Logo.jpeg" alt="Kreeda">
+            <span>Kreeda</span>
+            <i class="fa-solid fa-user"></i>
+        </button>
+        <button class="p-2 md:hidden" onclick="handleMenu()" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars text-gray-700"></i>
+        </button>
+        
+        <div id="nav-dialog" class="fixed bg-white inset-0 p-3 overlay">
+            <div class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-cover max-w-12 max-h-12" src="Pic/Logo.jpeg" alt="Logo">
+                    <span class="text-lg font-medium font-display">Logo</span>
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-700"></i>
+                </button>
+            </div>
+            <div class=" mt-6">
+                <a href="#" class="font-medium hover:text-primary m-3 p-3">Home</a>
+                <a href="#" class="font-medium hover:text-primary m-3 p-3">Training</a>
+                <a href="#" class="font-medium hover:text-primary m-3 p-3">Blog</a>
+                <a href="#" class="font-medium hover:text-primary m-3 p-3">News</a>
+                <a href="#" class="font-medium hover:text-primary m-3 p-3">Journal</a>
+                <a href="#" class="font-medium hover:text-primary m-3 p-3">About Us</a>
+            </div>
+            
+        </div>
+    </nav>
+</body>
+</html>
